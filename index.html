@@ -22,7 +22,7 @@
           <span class="brand-name">FlowLife</span>
         </div>
         <h3 id="auth-title">Welcome Back</h3>
-        <p id="auth-subtitle" class="text-muted">Sign in to your local account to access your workspace</p>
+        <p id="auth-subtitle" class="text-muted">Sign in to your account to access your workspace</p>
       </div>
 
       <!-- LOGIN FORM -->
@@ -83,7 +83,7 @@
       </div>
 
       <nav class="sidebar-nav">
-        <div class="nav-group-label">OPERATING SYSTEM</div>
+        <div class="nav-group-label">WORKSPACE</div>
         <button class="nav-item active" data-tab="dashboard">
           <span class="nav-icon">🏠</span>
           <span class="nav-label">Home</span>
@@ -100,10 +100,10 @@
           <span class="nav-shortcut">Ctrl+2</span>
         </button>
 
-        <div class="nav-group-label">PRODUCTIVITY LOGS</div>
+        <div class="nav-group-label">LOGS & TRACKERS</div>
         <button class="nav-item" data-tab="habits">
           <span class="nav-icon">⚡</span>
-          <span class="nav-label">Habit Engine</span>
+          <span class="nav-label">Habits</span>
           <span class="nav-shortcut">Ctrl+3</span>
         </button>
         <button class="nav-item" data-tab="budget">
@@ -123,13 +123,12 @@
         </button>
         <button class="nav-item" data-tab="analytics">
           <span class="nav-icon">📊</span>
-          <span class="nav-label">Analytics Hub</span>
+          <span class="nav-label">Analytics</span>
           <span class="nav-shortcut">Ctrl+7</span>
         </button>
       </nav>
 
       <div class="sidebar-footer">
-        <!-- AUTHENTICATED USER BADGE -->
         <div class="user-profile-badge" id="user-profile-badge">
           <div class="user-avatar" id="user-avatar-initials">--</div>
           <div class="user-details">
@@ -161,7 +160,7 @@
         </div>
         <div class="top-bar-controls">
           <div class="status-indicator">
-            <span class="pulse-dot"></span> Sync Status: <strong id="sync-status">Local Engine Ready</strong>
+            <span class="pulse-dot"></span> Status: <strong id="sync-status">Ready</strong>
           </div>
           <span class="shortcut-tip">Press <kbd>Space</kbd> in Focus Mode</span>
         </div>
@@ -171,7 +170,7 @@
         <!-- DASHBOARD TAB -->
         <section id="tab-dashboard" class="tab-content active">
           <div class="notion-page-header">
-            <h1 class="page-title">Executive Dashboard 👋</h1>
+            <h1 class="page-title">Dashboard 👋</h1>
             <p id="current-date-display" class="page-subtitle"></p>
           </div>
 
@@ -205,7 +204,7 @@
               <ul id="dash-agenda-list" class="item-list"></ul>
             </div>
             <div class="panel widget-panel">
-              <h3>Recent Workspace Activity</h3>
+              <h3>Recent Activity</h3>
               <ul id="dash-activity-log" class="item-list"></ul>
             </div>
           </div>
@@ -276,7 +275,7 @@
           </div>
 
           <div class="panel">
-            <h3>Weekly Matrix</h3>
+            <h3>Weekly Schedule</h3>
             <div id="timetable-matrix" class="timetable-matrix"></div>
           </div>
         </section>
@@ -284,7 +283,7 @@
         <!-- HABITS TAB -->
         <section id="tab-habits" class="tab-content">
           <div class="notion-page-header">
-            <h1 class="page-title">Habit Performance Engine</h1>
+            <h1 class="page-title">Habits</h1>
             <p class="page-subtitle">Build streak consistency with daily check-ins and tracking.</p>
           </div>
 
@@ -350,12 +349,12 @@
         <!-- TASKS & TIMER TAB -->
         <section id="tab-tasks" class="tab-content">
           <div class="notion-page-header">
-            <h1 class="page-title">Kanban Task Board & Focus Timer</h1>
+            <h1 class="page-title">Tasks & Focus Timer</h1>
             <p class="page-subtitle">Manage project work states and stay focused with Pomodoro sprints.</p>
           </div>
 
           <div class="timer-container panel">
-            <div class="timer-badge">POMODORO FOCUS ENGINE</div>
+            <div class="timer-badge">POMODORO TIMER</div>
             <h2 id="timer-display">25:00</h2>
             <div class="timer-controls">
               <button id="start-timer-btn" class="btn primary">Start Focus</button>
@@ -391,7 +390,7 @@
         <!-- QUICK NOTES TAB -->
         <section id="tab-notes" class="tab-content">
           <div class="notion-page-header">
-            <h1 class="page-title">Workspace Notes & Scratchpad</h1>
+            <h1 class="page-title">Notes & Scratchpad</h1>
             <p class="page-subtitle">Instant notes, code snippets, and daily logs.</p>
           </div>
 
@@ -410,7 +409,7 @@
         <!-- ANALYTICS TAB -->
         <section id="tab-analytics" class="tab-content">
           <div class="notion-page-header">
-            <h1 class="page-title">Analytics & Productivity Metrics</h1>
+            <h1 class="page-title">Analytics</h1>
             <p class="page-subtitle">Real-time statistics on your workspace throughput and habits.</p>
           </div>
 
@@ -421,11 +420,10 @@
           </div>
 
           <div class="panel">
-            <h3>System Status & Health</h3>
+            <h3>System Status</h3>
             <div class="system-health-list">
-              <div class="health-item"><span>Engine Status</span><strong>⚡ High Performance (Offline First)</strong></div>
-              <div class="health-item"><span>Storage Backend</span><strong>HTML5 Local Auth & Storage Engine</strong></div>
-              <div class="health-item"><span>Security Protocol</span><strong>Client-Side Isolated Context</strong></div>
+              <div class="health-item"><span>Application Status</span><strong>Online (Local)</strong></div>
+              <div class="health-item"><span>Storage</span><strong>Browser Local Storage</strong></div>
             </div>
           </div>
         </section>

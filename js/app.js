@@ -11,11 +11,11 @@ const tabMeta = {
   dashboard: { title: 'Home', icon: '🏠' },
   calendar: { title: 'Calendar & Milestone Planner', icon: '📅' },
   timetable: { title: 'Weekly Schedule Matrix', icon: '🗓️' },
-  habits: { title: 'Habit Performance Engine', icon: '⚡' },
+  habits: { title: 'Habits', icon: '⚡' },
   budget: { title: 'Financial Tracker & Splitter', icon: '💳' },
-  tasks: { title: 'Kanban Task Board & Focus Timer', icon: '🎯' },
+  tasks: { title: 'Tasks & Focus Timer', icon: '🎯' },
   notes: { title: 'Notes & Scratchpad', icon: '📝' },
-  analytics: { title: 'Analytics & Productivity Metrics', icon: '📊' }
+  analytics: { title: 'Analytics', icon: '📊' }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (activityLog) {
       activityLog.innerHTML = `
         <li><span>⚡ Workspace initialized</span><small style="color:var(--text-muted);">Just now</small></li>
-        <li><span>🔒 Isolated account session active</span><small style="color:var(--text-muted);">Secure</small></li>
+        <li><span>🔒 Account session active</span><small style="color:var(--text-muted);">Active</small></li>
       `;
     }
   }

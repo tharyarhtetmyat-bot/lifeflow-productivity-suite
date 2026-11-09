@@ -1,6 +1,3 @@
-/**
- * Local Account Authentication & User Session Manager
- */
 const AuthEngine = {
   getUsers() {
     const users = localStorage.getItem(StorageEngine.KEYS.USERS);
@@ -22,7 +19,7 @@ const AuthEngine = {
     const newUser = {
       name: name.trim(),
       username: cleanUsername,
-      password: password, // Simple client-side store
+      password: password,
       createdAt: new Date().toISOString()
     };
 
@@ -77,8 +74,8 @@ const AuthEngine = {
       e.preventDefault();
       loginForm.classList.add('hidden');
       signupForm.classList.remove('hidden');
-      document.getElementById('auth-title').innerText = 'Create Local Account';
-      document.getElementById('auth-subtitle').innerText = 'Start organizing with your isolated workspace';
+      document.getElementById('auth-title').innerText = 'Create Account';
+      document.getElementById('auth-subtitle').innerText = 'Start organizing with your personal workspace';
     });
 
     showLoginBtn.addEventListener('click', (e) => {
@@ -86,7 +83,7 @@ const AuthEngine = {
       signupForm.classList.add('hidden');
       loginForm.classList.remove('hidden');
       document.getElementById('auth-title').innerText = 'Welcome Back';
-      document.getElementById('auth-subtitle').innerText = 'Sign in to your local account to access your workspace';
+      document.getElementById('auth-subtitle').innerText = 'Sign in to your account to access your workspace';
     });
 
     loginForm.addEventListener('submit', (e) => {
@@ -129,7 +126,7 @@ const AuthEngine = {
     const initialsEl = document.getElementById('user-avatar-initials');
 
     if (nameEl) nameEl.innerText = user.name;
-    if (statusEl) statusEl.innerText = '● Active Session';
+    if (statusEl) statusEl.innerText = '● Active';
     if (initialsEl) {
       const parts = user.name.trim().split(' ');
       const initials = parts.length > 1 ? (parts[0][0] + parts[parts.length - 1][0]) : user.name.slice(0, 2);

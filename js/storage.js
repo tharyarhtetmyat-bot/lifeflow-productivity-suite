@@ -1,6 +1,3 @@
-/**
- * User-Isolated Data Storage & Local Persistence Engine
- */
 const StorageEngine = {
   KEYS: {
     USERS: 'flowlife_users',

@@ -20,7 +20,6 @@ body {
   width: 100vw;
 }
 
-/* BRAND & SIDEBAR STYLING */
 .sidebar {
   width: var(--sidebar-width);
   background-color: var(--bg-sidebar);
@@ -228,7 +227,6 @@ body {
   color: var(--text-main);
 }
 
-/* MAIN CONTENT */
 .main-content {
   flex: 1;
   display: flex;
