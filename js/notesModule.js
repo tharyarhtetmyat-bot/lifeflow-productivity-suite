@@ -3,7 +3,7 @@ const NotesModule = {
 
   init() {
     this.notes = StorageEngine.load('notes', [
-      { id: 1, title: 'System Architecture Note', content: 'FlowLife workspace features isolated local account persistence and offline caching.', updated: '2026-11-09' }
+      { id: 1, title: 'System Note', content: 'FlowLife workspace features isolated local account storage and offline access.', updated: '2026-11-09' }
     ]);
     this.render();
     this.bindEvents();

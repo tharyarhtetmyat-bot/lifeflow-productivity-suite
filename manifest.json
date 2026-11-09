@@ -1,7 +1,7 @@
 {
   "name": "FlowLife Productivity Suite",
   "short_name": "FlowLife",
-  "description": "Unified Productivity Suite & Personal Operating System",
+  "description": "Unified Personal Productivity Suite",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",

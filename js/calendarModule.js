@@ -31,6 +31,8 @@ const CalendarModule = {
       const title = document.getElementById('event-title').value.trim();
       const date = document.getElementById('event-date').value;
 
+      if (!title || !date) return;
+
       this.events.push({ id: Date.now(), title, date });
       document.getElementById('event-title').value = '';
       document.getElementById('event-date').value = '';
@@ -39,6 +41,18 @@ const CalendarModule = {
       this.render();
       showToast('Calendar event added');
     });
+  },
+
+  handleDayClick(dateStr) {
+    const dateInput = document.getElementById('event-date');
+    const titleInput = document.getElementById('event-title');
+    if (dateInput) {
+      dateInput.value = dateStr;
+    }
+    if (titleInput) {
+      titleInput.focus();
+    }
+    showToast(`Selected date: ${dateStr}`);
   },
 
   deleteEvent(id) {
@@ -74,7 +88,7 @@ const CalendarModule = {
       const isToday = dateStr === todayStr;
 
       cellsHTML += `
-        <div class="cal-cell ${isToday ? 'today' : ''}">
+        <div class="cal-cell ${isToday ? 'today' : ''}" onclick="CalendarModule.handleDayClick('${dateStr}')">
           <strong>${day}</strong>
           <div class="cal-events">
             ${dayEvents.map(ev => `<span class="cal-event-tag" title="${ev.title}">${ev.title}</span>`).join('')}
